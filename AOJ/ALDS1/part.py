@@ -1,10 +1,24 @@
-def partition(l, p, r):
-    x = int(l[r-1][-1])
-    i = p-1
-    for j in range(p, r-1):
-        if int(l[j][-1]) <= x:
-            i += 1
-            l[i], l[j] = l[j], l[i]
-        print(l)
-    l[i+1] ,l[r-1] = l[r-1], l[i+1]
-    return i+1
+n, m = map(int, input().split())
+G = [[] for _ in range(n)]
+for _ in range(m):
+  s, t = map(int, input().split())
+  G[s].append(t)
+  G[t].append(s)
+print(G)
+
+reps = [None] * n
+for s in range(n):
+  if reps[s] is None:
+    reps[s] = s
+    q = [s]
+    while q:
+      v = q.pop(0)
+      for u in G[v]:
+        if reps[u] is None:
+          reps[u] = s
+          q.append(u)
+
+for _ in range(int(input())):
+  s, t = map(int, input().split())
+  print("yes" if reps[s] == reps[t] else "no")
+print(reps)
