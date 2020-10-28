@@ -69,3 +69,7 @@ print(list(itertools.product([0,1], repeat=3)))
 #全角数字
 [chr(i) for i in range(65296, 65296+10)]
 [chr(i) for i in range(ord('０'), ord('９')+1)]
+
+from statistics import mean, median, variance, stdev, pvariance, pstdev
+#先頭にpがついているものは母分散と母標準偏差
+
