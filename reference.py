@@ -49,3 +49,23 @@ print(list(itertools.combinations([1, 2, 3], 2)))
 #直積
 print(list(itertools.product([0,1], repeat=3)))
 # -> [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+
+#アルファベット小文字
+[chr(i) for i in range(97, 97+26)]
+[chr(i) for i in range(ord('a'), ord('z')+1)]
+#アルファベット大文字
+[chr(i) for i in range(65, 65+26)]
+[chr(i) for i in range(ord('A'), ord('Z')+1)]
+#半角数字
+[chr(i) for i in range(48, 48+10)]
+[chr(i) for i in range(ord('0'), ord('9')+1)]
+#ひらがな
+[chr(i) for i in range(12353, 12436)]
+[chr(i) for i in range(ord('ぁ'), ord('ん')+1)]
+#カタカナ
+[chr(i) for i in range(12449, 12532+1)]
+[chr(i) for i in range(ord('ァ'), ord('ン')+2)]
+# 「ヴ」がいらない場合は「-1」してください
+#全角数字
+[chr(i) for i in range(65296, 65296+10)]
+[chr(i) for i in range(ord('０'), ord('９')+1)]
