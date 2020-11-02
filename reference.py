@@ -19,8 +19,10 @@ from collections import Counter, deque
 s = Counter("Qiita")
 print(s)
 print(s["i"])
+print(*sorted(s.elements()))
 #>Counter({'i': 2, 'Q': 1, 't': 1, 'a': 1})
 #>2
+#>a i i t Q
 
 #dequeはキューとして使用することが出来る
 d = deque([[1, 2], 2, 3, 4])
