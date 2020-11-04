@@ -1,3 +1,4 @@
+#辺の値を反転させて最短経路問題としてベルマンフォード法を用いた
 n, m = map(int, input().split())
 dist = [float("inf")]*n
 dist[0] = 0
