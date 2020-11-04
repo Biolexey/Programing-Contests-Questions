@@ -1,5 +1,7 @@
-def func(a, b):#関数を定義
-    return min(len(str(a)), len(str(b)))
-
-c = func(1,10000)
-print(c)
+import math
+a, b, c, d = map(int, input().split())
+a -= 1
+lcm = (c*d)//math.gcd(c,d)
+A = a-(a//c+a//d-a//lcm)
+B = b-(b//c+b//d-b//lcm)
+print(B-A)

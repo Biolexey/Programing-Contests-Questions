@@ -13,6 +13,8 @@ str.isalpha()
 str.isalnum()
 #負の数や少数でもTrueにしたいなら,.-などをreplaceしたり、float()で変換可能か判定すればよい
 
+----------------------------------------------------------------------
+
 from collections import Counter, deque
 #counterはリストやイテレータからすべての値の出現回数をカウントする
 #s.keys(), s.values(), s.items(), list(s)で要素を抽出できる
@@ -35,6 +37,8 @@ print(d)
 # >[1, 2]
 # >deque([4, 2, 3, 1])
 
+----------------------------------------------------------------------
+
 import itertools
 d = [1,2,3,4,5]
 #累積和
@@ -51,6 +55,8 @@ print(list(itertools.combinations([1, 2, 3], 2)))
 #直積
 print(list(itertools.product([0,1], repeat=3)))
 # -> [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+
+----------------------------------------------------------------------
 
 #アルファベット小文字
 [chr(i) for i in range(97, 97+26)]
@@ -72,6 +78,30 @@ print(list(itertools.product([0,1], repeat=3)))
 [chr(i) for i in range(65296, 65296+10)]
 [chr(i) for i in range(ord('０'), ord('９')+1)]
 
+----------------------------------------------------------------------
+
 from statistics import mean, median, variance, stdev, pvariance, pstdev
 #先頭にpがついているものは母分散と母標準偏差
 
+----------------------------------------------------------------------
+
+#dictをソートする(タプルで帰ってくる)
+score = {'kokugo': 33, 'sansuu': 85, 'eigo': 60}
+ #keyで並び替える
+score_sorted = sorted(score.items(), key=lambda x:x[0])
+ #valueで並び替える
+score_sorted = sorted(score.items(), key=lambda x:x[1])
+#dictのリストのソート
+scores = [
+    {'kokugo': 33, 'sansuu': 85},
+    {'kokugo': 77, 'sansuu': 23},
+    {'kokugo': 55, 'sansuu': 100}
+]
+
+scores_sorted = sorted(scores, key=lambda x:x['kokugo'])
+
+# [
+#     {'kokugo': 33, 'sansuu': 85},
+#     {'kokugo': 55, 'sansuu': 100},
+#     {'kokugo': 77, 'sansuu': 23}
+# ]
