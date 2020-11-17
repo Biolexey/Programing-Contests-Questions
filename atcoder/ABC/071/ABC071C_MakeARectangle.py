@@ -6,8 +6,5 @@ if len(A) < 2:
     print(0)
 else:
     A = sorted(A.items(), key=lambda x: -x[0])
-    if A[0][1] >= 4:
-        print(2*A[0][0])
-    s:
-        print(A[0][0]*A[1][0])
+    print(A[0][0]*A[1][0] if A[0][1] < 4 else A[0][0]*A[0][0])
 
