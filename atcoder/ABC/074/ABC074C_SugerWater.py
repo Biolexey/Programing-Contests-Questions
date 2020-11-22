@@ -6,12 +6,7 @@ b *= 100
 dp = [-1 for _ in range(f+1)]
 
 for i in range(a, f+1):
-    if i % a == 0:
-        dp[i] = 0
-for i in range(a, f+1):
-    if dp[i] != -1 and i + b <= f:
-        dp[i+b] == 0
-    if i % b == 0:
+    if i % a == 0 or i % b == 0:
         dp[i] = 0
 
 for i in range(a, f+1):
