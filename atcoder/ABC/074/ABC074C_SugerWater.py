@@ -30,3 +30,21 @@ for i in range(a, f+1):
 m = max(dp)
 ind = dp.index(m)
 print(ind, int(ind*m//100))
+
+#普通に解く
+a, b, c, d, e, f = map(int, input().split())
+ans = [0]*2#[water,suger]
+ma = 0#最大の濃度を保持
+for i in range(f//100+1):#waterの量を全探索
+    if i%a == 0 or i%b == 0:
+        w = i*100
+        limit = min(f-w, i*e)#sugerの量の上限
+        s = 0
+        for j in range(limit//c+1):#sugerの量を全探索
+            cs = j*c#c[g]のsugerを使ったsugerの量
+            s = max(s, cs+((limit-cs)//d)*d)#全sugerの量
+        if w != 0:
+            if ma <= (100*s)/(w+s):
+                ans = [w, s]
+                ma = (100*s)/(w+s)
+print(ans[0]+ans[1], ans[1])
