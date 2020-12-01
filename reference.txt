@@ -124,3 +124,7 @@ def comb(n, r):
     if n < 0 or r < 0:
         return 0
     return fac[n]*(finv[r]*finv[n-r]%mod)%mod
+---------------------------------------------------------------------
+
+#ワーシャルフロイド法
+from scipy.sparse.csgraph import floyd_warshall
