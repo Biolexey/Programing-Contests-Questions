@@ -13,4 +13,4 @@ for i in range(1, l):
 ans = 0
 for i in range(1, l):
     ans = max(t[i], ans)#レコードの最大同時使用数を調べる
-print(min(len(C),ans))#録画チャンネル数と比較
+print(min(len(C),ans))#録画チャンネル数と比較する
