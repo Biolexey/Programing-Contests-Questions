@@ -1,4 +1,3 @@
-import bisect, math
 n = int(input())
 a = sorted([*map(int, input().split())])
 maxnum = a[-1]
