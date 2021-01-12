@@ -1,6 +1,6 @@
 h, w = map(int, input().split())
-s = [["."]+input().split()+["."] for _ in range(h)]
-print(s)
+s = ["." + input() + "." for _ in range(h)]
+s = ["." * (w+2)] + s + ["." * (w+2)]
 for i in range(h):
     for j in range(w):
         if s[i][j] == ".":
