@@ -13,7 +13,6 @@ s = input()[::-1] # 入力文字列を逆順でsに格納
 
 counts = [0] * 2019
 counts[0] = 1
-
 num, d = 0, 1
 
 for char in s:
