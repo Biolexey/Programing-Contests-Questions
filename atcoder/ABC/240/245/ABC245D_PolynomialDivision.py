@@ -18,3 +18,22 @@ coefB = list(map(int, polyB[0].c))
 # 順番を逆にして出力
 ans = list(reversed(coefB))
 print(*ans)
+
+#ライブラリを使わない方法
+N, M = map(int,input().split())
+A = list(map(int,input().split()))
+C = list(map(int,input().split()))
+ 
+B = [0]*(M+1)
+ 
+for i in range(M+1):
+    x = 0
+    for k in range(1, i+1):
+        if 0 <= N-k:
+            x += A[N-k] * B[M-(i-k)]
+        else:
+            break
+    
+    B[M-i] = (C[M+N-i]-x)//A[N]
+    
+print(*B)
