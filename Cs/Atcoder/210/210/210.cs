@@ -4,9 +4,9 @@ using System.Linq;
  
 namespace ConsoleApp210
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        void Main(string[] args)
         {
             int[] ipt = Console.ReadLine().Split().Select(int.Parse).ToArray();//var iptでも可
             //安くなる金額
