@@ -14,5 +14,4 @@ public class prob{
 
         Console.WriteLine(ans);
     }
-    
 }
