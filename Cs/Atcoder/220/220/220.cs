@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace test
 {
@@ -6,8 +8,16 @@ namespace test
     {
         static void Main(string[] args)
         {
-            var massage = Console.ReadLine();
-            Console.WriteLine("Hello "+ massage);
+            int[] pnt = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int A = pnt[0], B =  pnt[1], C =  pnt[2];
+            int ans = -1;
+            for(int i = A; i <= B; i++){
+                if(i%C == 0){
+                    ans = i;
+                    break;
+                }
+            }
+            Console.WriteLine(ans);
         }
     }
 }

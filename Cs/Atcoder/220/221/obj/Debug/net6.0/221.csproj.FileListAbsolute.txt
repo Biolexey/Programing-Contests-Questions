@@ -1,0 +1,15 @@
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\221.csproj.AssemblyReference.cache
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\221.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\221.AssemblyInfoInputs.cache
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\221.AssemblyInfo.cs
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\221.csproj.CoreCompileInputs.cache
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\bin\Debug\net6.0\221.exe
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\bin\Debug\net6.0\221.deps.json
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\bin\Debug\net6.0\221.runtimeconfig.json
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\bin\Debug\net6.0\221.dll
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\bin\Debug\net6.0\221.pdb
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\221.dll
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\refint\221.dll
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\221.pdb
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\221.genruntimeconfig.cache
+C:\Users\regen\Documents\Python\Probrems\Cs\Atcoder\220\221\obj\Debug\net6.0\ref\221.dll
