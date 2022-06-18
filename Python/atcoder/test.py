@@ -1,44 +1,19 @@
-import sys
-import requests
-import pprint
-import json
+h1, h2, h3, w1, w2, w3 = map(int, input().split())
 
-global url
-url = "http://challenge-server.code-check.io/api/recursive/ask"
+if h1+h2+h3 != w1+w2+w3:
+    print(0)
+    exit()
+ans  =0
+for i in range(1, w1-1):
+    for j in range(1, w1-1-i):
+        for k in range(1, w1-1-i-j):
+            for l in range(1, w2-1):
+                for m in range(1, w2-1-l):
+                    for n in range(1, w2-1-l-m):
+                        for o in range(1, w3-1):
+                            for p in range(1, w3-1-o):
+                                for q in range(1, w3-1-o-p):
+                                    if i+l+o == h1 and j+m+p == h2 and k+n+q == h3:
+                                        ans += 1
 
-
-
-def func(n):
-    global url, txt
-
-    N = [0 for _ in range(51)]
-
-    if n == 0:
-        return 1
-    elif n == 2:
-        return 2
-    elif n % 2 == 0:
-        return func(n-1) + func(n-2) + func(n-3) + func(n-4)
-    else:
-        if N[n]:
-            return N[n]
-        else:
-            param = {"seed": txt, "n": n}
-            res = requests.get(url, params=param)
-            data = res.json()
-            result = int(data["result"])
-            N[n] = result
-            return result
-
-if __name__ == '__main__':
-    try:
-        global txt
-        args = sys.argv
-        if len(args) > 3:
-            main()
-        txt, num = args[1], int(args[2])
-        print(func(num))
-
-    except:
-        print("error!")
-        main()
+print(ans)
